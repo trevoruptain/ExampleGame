@@ -161,6 +161,7 @@ export default class Game {
             if (player.lost()) {
                 const winner = player.ord === 1 ? 2 : 1;
                 alert(`Player ${winner} wins!`);
+                window.location.reload();
             }
         });
 
